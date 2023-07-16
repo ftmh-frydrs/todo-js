@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./content/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<body class="text-white bg-gray-800">
+
+
+    <p class="text-center font-bold text-4xl mt-12">My TO DO List</p>
+    <form class="w-[100%] flex justify-content-center justify-center align-content-center align-items-center mt-12"
+        action="">
+        <div class="flex">
+            <div>
+                <div
+                    class="search-box relative  h-[50px] w-[50px] mx-8 text-gray-800 px-5 mx-3 rounded-full active:sm:w-[300px] sm:w-[300px] max-sm:w-[200px] w-[150px] h-[50px]">
+                    <input class="rounded-full pr-[60px] pl-[20px] outline-none w-[100%] h-[100%] opacity-0 todo-input" type="text" placeholder="Type">
+                    <div class="search-icon absolute top-1/2 right-0 w-[50px] h-[50px] bg-withe text-center rounded-full" type="submit">
+                        <i class="fas fa-plus-circle fa-lg text-4xl"></i>
+                    </div>
+                    <div class="cancel-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="search-data btn">
+                    </div>
+                </div>
+                <ul class="list mx-3"></ul>
+            </div>
+        </div>
+        </div>
+        <div class="relative rounded-full select">
+            <select
+                class=" cursor-pointer sm:w-[130px] w-[80px] mx-5 outline-none rounded-full h-[50px] text-pink-500 px-5"
+                name="todo" id="">
+                <option class="px-3" value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+    </form>
+
+
+    <script src="./content/js/app.js"></script>
+    
+</body>
+
+</html>
